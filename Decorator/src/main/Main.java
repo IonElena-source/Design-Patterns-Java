@@ -10,7 +10,8 @@ public class Main {
         DecoratorAbstract decoratorPasteFericit=new DecoratorPasteFericit(nota);
         decoratorPasteFericit.printeaza();
 
-        DecoratorAbstract decoratorLaMultiAni=new DecoratorLaMultiAni(nota);
+        DecoratorAbstract decoratorLa
+        MultiAni=new DecoratorLaMultiAni(nota);
         decoratorLaMultiAni.printeaza();
         DecoratorAbstract decoratorCascada=new DecoratorLaMultiAni(decoratorPasteFericit);
         decoratorCascada.printeaza();
