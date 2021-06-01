@@ -1,9 +1,9 @@
-package Main;
+package Sportiv.Main;
 
-import Clase.Bilet;
-import Clase.BiletAdapter;
-import Clase.BiletAdaptorClase;
-import Clase.EBiletOnline;
+import Sportiv.Clase.BiletAdapter;
+import Sportiv.Clase.Bilet;
+import Sportiv.Clase.BiletAdaptorClase;
+import Sportiv.Clase.EBiletOnline;
 
 public class Main {
     public static void rezervaSiVindeBiletOnline(EBiletOnline eBiletOnline){

@@ -1,4 +1,4 @@
-package Clase;
+package Sportiv.Clase;
 
 public class BiletAdaptorClase extends Bilet implements EBiletOnline{
     public BiletAdaptorClase(float pret) {

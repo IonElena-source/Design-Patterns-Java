@@ -1,4 +1,4 @@
-package Clase;
+package Sportiv.Clase;
 
 public class Bilet {
     private float pret;
