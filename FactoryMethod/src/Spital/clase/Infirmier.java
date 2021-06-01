@@ -1,4 +1,4 @@
-package clase;
+package Spital.clase;
 
 public class Infirmier extends PersonalSpital {
     public Infirmier(String nume) {

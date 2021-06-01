@@ -1,4 +1,4 @@
-package clase;
+package Spital.clase;
 
 public class FactoryBrancardier implements IFactory{
     @Override

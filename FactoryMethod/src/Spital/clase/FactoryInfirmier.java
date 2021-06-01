@@ -1,4 +1,4 @@
-package clase;
+package Spital.clase;
 
 public class FactoryInfirmier implements IFactory{
     @Override

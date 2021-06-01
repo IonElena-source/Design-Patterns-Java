@@ -1,4 +1,4 @@
-package clase;
+package Spital.clase;
 
 public class FactoryAsistent implements IFactory{
     @Override

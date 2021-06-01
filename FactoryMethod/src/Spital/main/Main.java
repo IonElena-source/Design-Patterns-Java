@@ -1,8 +1,10 @@
-import clase.FactoryAsistent;
-import clase.FactoryInfirmier;
-import clase.FactoryMedic;
-import clase.PersonalSpital;
-import clase.IFactory;
+package Spital.main;
+
+import Spital.clase.FactoryAsistent;
+import Spital.clase.FactoryInfirmier;
+import Spital.clase.FactoryMedic;
+import Spital.clase.PersonalSpital;
+import Spital.clase.IFactory;
 public class Main {
     public static void afisareAngajat(IFactory factory,String nume){
         PersonalSpital personalSpital=factory.getPersonal(nume);
