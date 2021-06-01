@@ -1,3 +1,5 @@
+package Farmacie;
+
 public class Reteta implements PrototipAbstract {
     private String denumireSolutie;
     private int canitateSolutie;
@@ -15,7 +17,7 @@ public class Reteta implements PrototipAbstract {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Reteta{");
+        final StringBuilder sb = new StringBuilder("Farmacie.Reteta{");
         sb.append("denumireSolutie='").append(denumireSolutie).append('\'');
         sb.append(", canitateSolutie=").append(canitateSolutie);
         sb.append('}');
