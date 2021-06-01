@@ -1,4 +1,4 @@
-package clase;
+package Spital.clase;
 
 public enum TipPersonal {
     Brancardier,

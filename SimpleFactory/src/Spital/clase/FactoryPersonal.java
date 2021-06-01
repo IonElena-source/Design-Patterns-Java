@@ -1,4 +1,4 @@
-package clase;
+package Spital.clase;
 
 public class FactoryPersonal {
     public PersonalSpital createPersonal(TipPersonal tipPersonal,String nume){

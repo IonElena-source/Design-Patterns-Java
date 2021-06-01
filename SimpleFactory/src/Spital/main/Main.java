@@ -1,6 +1,8 @@
-import clase.FactoryPersonal;
-import clase.PersonalSpital;
-import clase.TipPersonal;
+package Spital.main;
+
+import Spital.clase.FactoryPersonal;
+import Spital.clase.PersonalSpital;
+import Spital.clase.TipPersonal;
 
 public class Main {
     public static void main(String[] args) {
