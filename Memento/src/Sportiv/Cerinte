@@ -1,0 +1,8 @@
+Pentru fiecare meci jucat pe stadion pentru vânzarea biletelor și pentru realizarea reclamelor
+se rețin următoarele informații: data meciului, echipele care au jucat, numărul de bilete vândute,
+numărul de spectatori care au participat la meci, numărul de sticle de apă vândute, numărul de
+jandarmi angajați, numărul de stewarzi, etc. Managerul stadionului dorește implementarea unui
+modul care să îi permită salvarea informațiilor pentru numărul de spectatorii care au participat la
+meci, numele echipelor care au jucat și data meciului. Își dorește să efectueze aceste salvări, astfel
+încât să îi permită la un moment revenirea la o salvare anterioară și să poată realiza anumite
+statistici.
