@@ -1,7 +1,7 @@
-package main;
+package ClinicaVeterinara.main;
 
-import clase.ClinicaVeterinaraLazy;
-import exercitiu.Proiect;
+import ClinicaVeterinara.clase.ClinicaVeterinaraLazy;
+import Proiect.Proiect;
 
 public class Program {
     public static void main(String[] args) {

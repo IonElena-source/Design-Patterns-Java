@@ -1,4 +1,4 @@
-package exercitiu;
+package Proiect;
 
 public class Proiect {
     private String denumire;

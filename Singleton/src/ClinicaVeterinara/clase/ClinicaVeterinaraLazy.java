@@ -1,26 +1,15 @@
-package clase;
+package ClinicaVeterinara.clase;
 
-public class ClinicaVeterinara {
+public class ClinicaVeterinaraLazy {
     private String nume;
     private String adresa;
     private int nrMedici;
     private float buget;
-    //eager-intialization--presupune ca initializare se face la momentul declararii
-    private static final ClinicaVeterinara clinicaVeterinara=new ClinicaVeterinara("VET","Strada Dorobanti",
-            25,255.6F);
 
-    //constructorul obligatoriu trebuie sa fie private
-    private ClinicaVeterinara(String nume, String adresa, int nrMedici, float buget) {
-        this.nume = nume;
-        this.adresa = adresa;
-        this.nrMedici = nrMedici;
-        this.buget = buget;
-    }
+    //la lazy nu ne mai intializam instanta la momentul declararii
+    //la singleton,constructorul se apeleaza o singura data
+    private static ClinicaVeterinaraLazy instanta=null;
 
-    //metoda statica care va returna instanta
-    public static ClinicaVeterinara getInstance(){
-        return clinicaVeterinara;
-    }
 
     public String getNume() {
         return nume;
@@ -54,14 +43,28 @@ public class ClinicaVeterinara {
         this.buget = buget;
     }
 
+    public ClinicaVeterinaraLazy(String nume, String adresa, int nrMedici, float buget) {
+        this.nume = nume;
+        this.adresa = adresa;
+        this.nrMedici = nrMedici;
+        this.buget = buget;
+    }
+    //putem primii drept parametri acum din afara despre
+    // cum ne putem creea aaceasta instanta
+    public static synchronized ClinicaVeterinaraLazy getInstance(String nume, String adresa, int nrMedici, float buget){
+        if(instanta==null){
+            instanta=new ClinicaVeterinaraLazy(nume,adresa,nrMedici,buget);
+        }
+        return instanta;
+    }
+
     @Override
     public String toString() {
-        return "ClinicaVeterinara{" +
+        return "ClinicaVeterinaraLazy{" +
                 "nume='" + nume + '\'' +
                 ", adresa='" + adresa + '\'' +
                 ", nrMedici=" + nrMedici +
                 ", buget=" + buget +
                 '}';
     }
-
 }
